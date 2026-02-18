@@ -29,7 +29,7 @@ export default function Shop() {
       .then((r) => setProducts(r.data.data))
       .finally(() => setLoading(false));
   }, [filters]);
-console.log(products)
+console.log(api)
   return (
     <div className="bg-neutral-100">
       <PageMeta title="Shop" />
