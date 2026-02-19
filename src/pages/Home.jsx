@@ -38,7 +38,10 @@ export default function Home() {
   const [featured, setFeatured] = useState([]);
 
   useEffect(() => {
-    api.get("/products", { params: { limit: 8 } }).then((r) => setFeatured(r.data.data.items));
+    api.get("/products", { params: { limit: 8 } }).then((r) => console.log(r)
+      // setFeatured(r.data.data.items)
+  );
+
   }, []);
 
   return (
