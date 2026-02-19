@@ -19,7 +19,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
-  console.log("API BASE:", import.meta.env.VITE_API_BASE,"/api");
+  console.log("API BASE:", import.meta.env.VITE_API_BASE);
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col">
       <Navbar />
